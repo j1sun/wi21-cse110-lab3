@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <head>
+    <title>Sample page</title>
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <header>
+      <h1>Justin Sun's User Page</h1>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <path class="heroicon-ui" d="M12 12a5 5 0 110-10 5 5 0 010 10zm0-2a3 3 0 100-6 3 3 0 000 6zm9 11a1 1 0 01-2 0v-2a3 3 0 00-3-3H8a3 3 0 00-3 3v2a1 1 0 01-2 0v-2a5 5 0 015-5h8a5 5 0 015 5v2z"/>
+      </svg>
+    </header>
+    <nav>
+      <div><span style="color:blue;">Links</span> to other parts:</div>
+      <ol>
+        <li><a href="#">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#other">Other stuff</a></li>
+      </ol>
+    </nav>
+    <main>
+      <figure>
+        <picture>
+          <source style="width:100px;" srcset="img/profile.jpg" media="(min-width: 800px)" />
+          <img src="img/profile-small.jpg" alt="profile picture" />
+        </picture>
+        <figcaption>Profile picture</figcaption>
+      </figure>
+      <p>
+        I'm a third-year undergraduate student studying <i>Computer
+        Engineering</i> at the <b>University of California, San Diego</b>.
+        You can find my projects <strong>below</strong>.
+      </p>
+    </main>
+    <hr>
+    <section>
+      <h2 name="projects">Projects</h2>
+      <ul>
+        <li>UCSD JSA Website Redesign (<a href="https://j1sun.github.io/jsa-redesign/">Project Link)</a></li>
+        <li><em>REDACTED</em></li>
+      </ul>
+    </section>
+    <aside>
+      <h3>
+        <b>Note:</b> You can find my previous page 
+        <a href="https://j1sun.github.io/cse110-lab1/">here</a>.
+      </h3>
+    </aside>
+    <footer>
+      <h2 name="other">Other stuff</h2>
+      <h3>A form to fill out:</h3>
+      <form>
+        <fieldset>
+          <legend>UCSD Opinions</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+
+          <label for="email">Email address:</label>
+          <input type="email" id="email" name="email">
+          <br>
+
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday">
+
+          <label for="ssn">SSN:</label>
+          <input type="password" id="ssn" name="ssn">
+          <br>
+
+          <label for="phone">Phone number:</label>
+          <input type="tel" id="phone" name="phone">
+          <br>
+
+          <label for="rating">Rate yourself on a scale from 1-10:</label>
+          <input type="range" id="rating" name="rating" min="0" max="11">
+          <br>
+
+          <label for="color">What's UCSD's primary color?:</label>
+          <input type="color" id="color" name="color">
+          <br>
+
+          <label for="founding">When was UCSD founded?:</label>
+          <input type="month" id="founding" name="founding">
+          <br>
+
+          <label for="answer-select">Do you like UCSD?:</label>
+          <select id="dino-select">
+            <optgroup label="Yes">
+              <option>Yes</option>
+              <option>Yes</option>
+            </optgroup>
+            <optgroup label="Yes">
+              <option>Yes</option>
+            </optgroup>
+          </select>
+          <br>
+
+          <label for="explanation">Explain your answer above:</label><br>
+          <textarea id="explanation" name="explanation" rows="5" cols="30"></textarea>
+
+        </fieldset>
+
+        <input type="reset" id="reset" name="reset">
+        <input type="submit" id="submit" name="submit">
+      </form>
+      <h3>An important table</h3>
+      <table style="border: solid 1px;">
+        <caption>Very important</caption>
+        <colgroup>
+          <col class="heading">
+          <col span="2" class="body">
+        </colgroup>
+        <thead>
+          <tr>
+            <th colspan="3" style="border: solid 1px;">Important data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <template>
+            <tr>
+              <td>Password:</td>
+              <td>hunter2</td>
+              <td>(Don't store in plaintext)</td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+      <button onclick="alert('Do not store your passwords in plaintext.')">Don't click</button>
+      <h3>iPhone ringtone:</h3>
+      <audio controls src="ringtone.mp3">Audio is not supported.</audio>
+      <h3>Location of Geisel:</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53610.34089531736!2d-117.2691323083653!3d32.88107637637216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d2f19f483aaaace!2sGeisel%20Library!5e0!3m2!1sen!2sus!4v1610527124963!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <h3>An empty canvas:</h3>
+      <canvas width="300" height="200"></canvas>
+      <details>
+        <summary>Info:</summary>
+        It's an empty canvas.
+      </details>
+      <h3>Some bee movie stuff:</h3>
+      <pre>
+        -... ..- --.. --..
+      </pre>
+      <code>git add beemoviescript.txt</code>
+      <h3>Not a rick roll:</h3>
+      <video controls src="rick-roll.mp4">Video is not supported.</video>
+    </footer>
+  </body>
+</html>
